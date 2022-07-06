@@ -1,0 +1,11 @@
+{
+  "name": "evan_kolin_v.2.0",
+  "version": "2.0.0",
+  "description": "Evan Kolin Website v.2.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yurii Zheka <zheka_yura@ukr.net>",
+  "license": "ISC"
+}
