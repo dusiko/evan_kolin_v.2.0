@@ -20,3 +20,4 @@ function copyCardNum(event) {
 		}
 	}
 }
+
