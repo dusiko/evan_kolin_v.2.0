@@ -56,7 +56,6 @@ function createItem(list, start, end = videoList.length) {
 			const iframe = document.createElement('iframe')
 			iframe.classList.add('video-block__item-video')
 			iframe.setAttribute('title', "YouTube video player")
-			iframe.setAttribute('frameborder', '0')
 			iframe.setAttribute('allow', 'accelerometer')
 			iframe.setAttribute('autoplay', 'autoplay')
 			iframe.setAttribute('clipboard-write', 'clipboard-write')

@@ -62,6 +62,7 @@
 
 .intro__text {
   margin: 25px 10px;
+  font-weight: normal;
 }
 .intro__text-donat {
   display: inline-block;
@@ -224,6 +225,7 @@
   flex-basis: 100%;
   max-height: 382px;
   min-height: 300px;
+  border: none;
 }
 
 .video-block__btn {
