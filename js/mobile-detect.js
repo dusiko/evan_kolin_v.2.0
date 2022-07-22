@@ -8,8 +8,6 @@ const options = {
 
 optimizationForMobil()
 
-
-
 function optimizationForMobil() {
 	if (detect.phone()) {
 		options.mobile = true
@@ -20,23 +18,17 @@ function optimizationForMobil() {
 			if (i > 1)
 				item.remove()
 		})
+		createBtnSHowMoreVideo()
 		window.addEventListener('scroll', Visible);
 	}
 }
 
-
-
-
 function lazyLoad() {
-	if (options.mobile === true && [...document.querySelectorAll('.video-block__item')].length - 1 !== videoList.length) {
+	if ([...document.querySelectorAll('.video-block__item')].length - 1 !== videoList.length) {
 		createItem(videoList, options.start, options.end)
-		options.start += 2
-		options.end += 2
 		setTimeout(() => window.addEventListener('scroll', Visible, Visible()), 500)
-
 	}
 }
-
 
 function createItem(list, start, end = videoList.length) {
 	const parent = document.querySelector('.video-list__inner')
@@ -68,9 +60,25 @@ function createItem(list, start, end = videoList.length) {
 			parent.append(blockItem)
 		}
 	})
+	options.start += 2
+	options.end += 2
+	if ([...document.querySelectorAll('.video-block__item')].length - 1 === videoList.length) {
+		if (document.querySelector('.show-more'))
+			document.querySelector('.show-more').remove()
+	}
+
 }
 
+function createBtnSHowMoreVideo() {
+	document.querySelectorAll('.show-more').forEach(item => item ? item.remove() : item)
+	const DIV = document.querySelector('.video-block__inner')
+	const btn = document.createElement('span')
+	btn.innerText = 'показати більше треків'
+	btn.classList.add('show-more')
+	btn.addEventListener('click', () => createItem(videoList, options.start, options.end))
+	DIV.append(btn)
 
+}
 
 // Получаем нужный элемент
 
@@ -98,6 +106,5 @@ function Visible() {
 		// Если элемент полностью видно, то запускаем следующий код
 		window.removeEventListener('scroll', Visible)
 		lazyLoad()
-
 	}
 };
