@@ -3,7 +3,7 @@ const videoList = [
 	{ "title": "Колін - Хабар", "src": "https://www.youtube.com/embed/-2sibJe9i0g" },
 	{ "title": "Колін - Циганський танк", "src": "https://www.youtube.com/embed/wziya1qpTtg" },
 	{ "title": "Колін - Чи не пішов би ти", "src": "https://www.youtube.com/embed/sLNcg4jnyso" },
-	{ "title": "Колін - Джавеліно", "src": "https://www.youtube.com/embed/VHziOPE51oI", },
+	{ "title": "Колін - Джавеліно", "src": "https://www.youtube.com/embed/VHziOPE51oI" },
 	{ "title": "Колін - Болить", "src": "https://www.youtube.com/embed/ggKdQTliNzA" },
 	{ "title": "Колін - Рашу роз*бем (+18)", "src": "https://www.youtube.com/embed/s9lfeOIqFAU" },
 	{ "title": "Колін - Мене не люблять", "src": "https://www.youtube.com/embed/sUKHmfh9Z7s" },
