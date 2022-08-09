@@ -17,6 +17,6 @@ const videoList = [
 	{ "title": "Колін - Сирена", "src": "https://www.youtube.com/embed/0mAsaUGLbbk" },
 	{ "title": "Колін - Ти на колінах", "src": "https://www.youtube.com/embed/d4O2AQ0wrXY" },
 	{ "title": "Колін - Привид Києва", "src": "https://www.youtube.com/embed/8mSHN9654KE" },
-	{ "title": "Колін - Дівчина небезпека", "src": "https://www.youtube.com/embed/4u02mAqdajQ", "new": true },
+	{ "title": "Колін - Дівчина небезпека", "src": "https://www.youtube.com/embed/NwPQd-HAKN8", "new": true },
 	{ "title": "Колін - А говорили", "src": "https://www.youtube.com/embed/L5YMOjW5Jdc" },
 ]
